@@ -18,7 +18,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
 // mongoose.connect('mongodb://localhost:27017/postsDB'); //mongoDB localhost connect
-mongoose.connect('mongodb+srv://admin-blog:Test-123@cluster0.zh0chzo.mongodb.net/postsDB');
+mongoose.connect('mongodb+srv://user:password@cluster0.zh0chzo.mongodb.net/postsDB');
 
 const postsSchema = {
     title : String,
